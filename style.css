@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  padding: 30px;
+  transition: background-color 0.5s ease;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.animate {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-30px); }
+}
+
+/* Themes */
+body.light {
+  background-color: #fff;
+  color: #111;
+}
+
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
